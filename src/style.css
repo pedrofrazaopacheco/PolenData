@@ -68,7 +68,11 @@ nav {
 }
 
 
-
+.explain-div {
+    display: flex; 
+    justify-content: center;
+    margin: 3rem 0px;
+}
 
 
 
@@ -344,6 +348,11 @@ footer img {
         margin: 0px 1rem;
     }
 
+    .explain-div {
+        flex-direction: column;
+        margin: 0;
+    }
+
     .center-div {
         width: 100%;
     }
@@ -388,7 +397,7 @@ footer img {
     }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 1050px) { 
+@media only screen and (min-width: 501px) and (max-width: 1050px) { 
 
     #inside-nav {
         margin: 0px 1rem;
@@ -400,6 +409,11 @@ footer img {
     footer img {
         max-width: 100%;
         /* object-fit: cover; */
+    }
+
+    .explain-div {
+        flex-direction: column;
+        margin: 3rem;
     }
 
 }
