@@ -31,5 +31,5 @@ module.exports = merge(common, {
            use: ['style-loader', 'css-loader'] //They load in Reversal
        }
        ]
-   }
+   },
 })
