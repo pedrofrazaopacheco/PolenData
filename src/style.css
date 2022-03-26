@@ -258,7 +258,7 @@ nav {
 
 
 
-
+/* TO DO */
 
 
 
@@ -329,6 +329,8 @@ footer h4 {
 
 
 
+
+
 @media only screen and (max-width: 600px) {
 
     #inside-nav {
@@ -383,7 +385,7 @@ footer h4 {
     /* Using */
 
     .whats-our-goal-div-explanations {
-        padding: 0px 1rem;
+        padding: 0px 2rem;
     }
 
     .explain-text-section {
@@ -391,11 +393,12 @@ footer h4 {
     }
 
     .explainations-grid {
+        display: flex;
         flex-direction: column;
-        /* padding: 0px 1rem; */
-        /* margin: 0; */
-        /* margin: 0px 1rem; */
-        /* max-width: 100%; */
+    }
+
+    .number-in-box {
+        margin-bottom: 1rem;
     }
 
     .whats-our-goal-title {

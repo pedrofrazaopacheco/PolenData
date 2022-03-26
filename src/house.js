@@ -5,11 +5,9 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 
-const model = require('./assets/models/polendatahousegavetas.glb')
+const model = require('./assets/models/CasaFinal.glb')
 //Renderer Size
 const sizes = {
-    // width: window.innerWidth < 1000 ? window.innerWidth : 1000,
-    // height: window.innerWidth < 1000 ? window.innerHeight : 562
     width: window.innerWidth,
     height: window.innerHeight
 }
@@ -25,14 +23,12 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height)
     // gui.add(camera.position, "x", -100, 100, 0.1).name("camera x")
 
 
-
 const loader = new GLTFLoader();
 const dracoLoader = new DRACOLoader();
 dracoLoader.setDecoderPath( './draco/' );
 loader.setDRACOLoader( dracoLoader );
 
 //GLB LOADER
-//Load 
 loader.load(
 	// resource URL
     // './assets/polendatahousegavetas.glb',
@@ -70,49 +66,6 @@ loader.load(
 	}
 );
 
-//GLTF LOADER
-// loader.load(
-// 	// resource URL
-// 	// '../blender/houseinnaturelights.gltf',
-// 	// '../blender/polendatahouselights3.gltf',
-//     // '../blender/pdhnolight.gltf',
-//     '../blender/pdhnolightcomp.gltf',
-
-// 	// called when the resource is loaded
-// 	function ( gltf ) {
-//         console.log("hey")
-//         const gltfMesh = gltf.scene;
-// 		scene.add( gltf.scene );
-//         gltfMesh.position.set(0,-6,0)
-//         gltfMesh.rotation.x = -Math.PI * 2
-
-//         //Animation of camera and object
-//         let tl = gsap.timeline();
-//         tl.add('start')
-//         tl.to(camera.position, {x: 30, duration: 2,}, 'start')
-//         tl.to(camera.position, {y: 17, duration: 2,}, 'start')
-//         tl.to(camera.position, {z: -20, duration: 2,}, 'start')
-//         tl.to(gltfMesh.rotation, {y: Math.PI * 2, duration: 2}, "start")
-
-//         //With Delay
-//         // tl.to(camera.position, {x: 30, duration: 2, delay: 0}, 'start')
-
-//         // gui.add(gltfMesh.rotation, "x", -Math.PI * 2, Math.PI * 2).name("rotation x")
-//         // gui.add(gltfMesh.rotation, "y",  -Math.PI * 2, Math.PI * 2).name("rotation y")
-//         // gui.add(gltfMesh.rotation, "z",  -Math.PI * 2, Math.PI * 2).name("rotation z")
-
-        
-// 	},
-// 	// called while loading is progressing
-// 	function ( xhr ) {
-// 		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
-// 	},
-// 	// called when loading has errors
-// 	function ( error ) {
-// 		console.log( 'An error happened' );
-// 	}
-// );
-
 function lightFunction(type, lightname, x, y, z, datneeded, intensity) {
     const name = lightname
     if (datneeded == undefined) {datneeded = true}
@@ -122,7 +75,6 @@ function lightFunction(type, lightname, x, y, z, datneeded, intensity) {
     } else if (type == "point") {
         lightname = new THREE.PointLight( 0xFCBF54, 0.7, 50 );
         // scene.add(new THREE.PointLightHelper( lightname, 5 ) );
-
     }
     
     lightname.position.set(x,y,z)
@@ -146,8 +98,6 @@ function lightFunction(type, lightname, x, y, z, datneeded, intensity) {
 
 }
 
-
-
 // Lights
 const light = new THREE.AmbientLight( 0x404040, 1 ); // soft white light
 scene.add( light );
@@ -161,7 +111,6 @@ lightFunction("point", "Logo", -0.2, 1.1, -4, false, 0.6)
 lightFunction("point", "cogumelodireita", 10, 0, -13, false, 0.76)
 lightFunction("point", "pl8", 6, 13, 20, false, 1.5)
 lightFunction("point", "partefrente", 8.28, 6.52, 0, false, 0.6)
-
 
 //BUTTERFLY LIGHTS BLENDER
 //Set at 50 W. Distance 2M
@@ -195,8 +144,6 @@ const Axes = new THREE.AxesHelper(10)
 
 window.addEventListener("resize", function() {
 
-    // sizes.width = window.innerWidth < 1000 ? window.innerWidth : 1000
-    // sizes.height = window.innerWidth < 1000 ? window.innerHeight : 562
     sizes.width = window.innerWidth
     sizes.height = window.innerHeight
 
