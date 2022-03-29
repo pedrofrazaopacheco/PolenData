@@ -283,6 +283,12 @@ footer h4 {
     margin: 0;
 }
 
+.PortugalFlag {
+    width: 22px;
+    height: auto;
+    margin: auto;
+}
+
 .footer-links {
     color: white;
     text-decoration: underline;
@@ -489,25 +495,26 @@ footer h4 {
         height: 135vh;
     }
 
-    .footer-title p {
-        margin: 0.25rem;
+    .footer-title {
+        margin-bottom: 0.5rem;
     }
 
-    .promo-video p {
-        margin: 0.25rem;
+    .contact {
+        margin-bottom: 0.5rem;
     }
 
-    .contact p {
-        margin: 0.25rem;
-
+    .promo-video {
+        margin-bottom: 0.5rem;
     }
 
-    .tech-used p {
-        margin: 0.25rem;
-
+    .footer-title {
+        margin-bottom: 0.5rem;
     }
 
-    .check-sketchfab p {
-        margin: 0.25rem;
+
+    .footer-text-div p {
+        margin-top: 0.1rem;
+        margin-bottom: 0.25rem;
     }
+
 }
