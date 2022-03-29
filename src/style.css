@@ -145,7 +145,7 @@ nav {
 .whats-our-goal-title {
     font-size: 3.5rem;
     margin: 0;
-    margin-top: 2rem;
+    margin-top: 3rem;
     background: #24E04E;
     background: -webkit-radial-gradient(circle farthest-corner at center center, #24E04E 0%, #E7D003 100%);
     background: -moz-radial-gradient(circle farthest-corner at center center, #24E04E 0%, #E7D003 100%);
@@ -157,7 +157,7 @@ nav {
 .whats-our-goal-div-explanations {
     /* display: flex;  */
     /* justify-content: center; */
-    margin: 3rem 0px;
+    margin-top: 3rem;
 }
 
 .whats-our-goal-div-explanations p {
@@ -167,14 +167,13 @@ nav {
 .explainations-grid {
     display: grid;
     grid-template-columns: 0.1fr 0.9fr;
-    grid-template-rows: 0.1fr 1fr 0.4fr;
+    grid-template-rows: 0.5fr 1fr 0.4fr;
     width: 100%;
     margin-bottom: 3rem;
 }
 
 .number-in-box {
     grid-area: 1 / 1 / 2 / 2;
-    display: flex;
     align-items: center;
 }
 
@@ -245,11 +244,13 @@ nav {
     grid-area: 2 / 2 / 3 / 3; 
     text-align: left;
     margin-bottom: 1rem;
+    max-width: 800px;
 }
 
 .explain-text-section p {
     font-size: 1.2rem;
     color: #6e6e6e;
+    margin-bottom: 1rem;
 }
 
 
@@ -412,6 +413,9 @@ footer h4 {
     }
 
 
+    .footer-title h2{
+        margin: 0;
+    }
 
 
 
@@ -424,6 +428,10 @@ footer h4 {
 
     footer {
         width: 100%;
+    }
+
+    .center-div-footer {
+        margin: -100px 0px;
     }
 
     footer img {
@@ -476,8 +484,30 @@ footer h4 {
 
 }
 
-@media only screen and (max-height: 925px){ 
+@media only screen and (max-height: 650px){ 
     footer img {
         height: 135vh;
+    }
+
+    .footer-title p {
+        margin: 0.25rem;
+    }
+
+    .promo-video p {
+        margin: 0.25rem;
+    }
+
+    .contact p {
+        margin: 0.25rem;
+
+    }
+
+    .tech-used p {
+        margin: 0.25rem;
+
+    }
+
+    .check-sketchfab p {
+        margin: 0.25rem;
     }
 }
