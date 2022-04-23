@@ -92,7 +92,7 @@ nav {
     flex-direction: column;
     /* justify-content: flex-end; */
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     min-height: 600px;
     margin-bottom: 5rem;
 }
@@ -146,12 +146,7 @@ nav {
     font-size: 3.5rem;
     margin: 0;
     margin-top: 3rem;
-    background: #24E04E;
-    background: -webkit-radial-gradient(circle farthest-corner at center center, #24E04E 0%, #E7D003 100%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #24E04E 0%, #E7D003 100%);
-    background: radial-gradient(circle farthest-corner at center center, #24E04E 0%, #E7D003 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: black;
 }
 
 .whats-our-goal-div-explanations {
@@ -253,12 +248,35 @@ nav {
     margin-bottom: 1rem;
 }
 
+#center-black-div {
+    background-color: black;
+    padding: 2rem 0px;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
 
+.center-div-image {
+    margin: auto;
+    max-width: 1000px;
+    margin: 1rem 0rem;
+}
 
+.prevision-animal {
+    max-width: 33%;
+}
 
+#prevision-row {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 3rem; */
+}
 
-
-
+.gavetas {
+    max-width: 480px;
+}
 /* TO DO */
 
 
@@ -352,7 +370,20 @@ footer h4 {
         display: none;
     }
 
+    #prevision-row {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 3rem; */
+    }
 
+    .prevision-animal {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .center-div-image {
+        max-width: 90%;
+    }
 
     .catch-phrase-banner {
         display: flex;
@@ -393,12 +424,13 @@ footer h4 {
 
     .whats-our-goal-div-explanations {
         padding: 0px 2rem;
-    }
-
-    .explain-text-section {
         margin-top: 1rem;
     }
 
+    .our-testings {
+        margin: 0;
+        margin-top: 2rem;
+    }
     .explainations-grid {
         display: flex;
         flex-direction: column;
@@ -410,6 +442,7 @@ footer h4 {
 
     .whats-our-goal-title {
         font-size: 2.2rem;
+        margin-top: 0px;
     }
 
     /* Using */
@@ -460,8 +493,6 @@ footer h4 {
         margin-left: 1rem;
     }
 
-
-
     /* Using */
 
     .explain-text-section {
@@ -471,6 +502,10 @@ footer h4 {
     .explainations-grid {
         flex-direction: column;
         margin: 1rem 1rem;
+    }
+
+    .center-div-image{
+        width: 90%;
     }
 
     /* Using */
@@ -517,20 +552,4 @@ footer h4 {
         margin-bottom: 0.25rem;
     }
 
-}
-/* #canvas {
-    max-width: 1000px;
-    border: 1px solid rgb(189, 189, 189);
-    border-radius: 20px;
-} */
-
-body {
-    overflow: hidden;
-}
-
-.house-centering {
-    height: 100vh;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
 }
