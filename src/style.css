@@ -248,6 +248,12 @@ nav {
     margin-bottom: 1rem;
 }
 
+.testings-div {
+    font-size: 1.2rem;
+    color: #6e6e6e;
+    margin-bottom: 1rem;
+}
+
 #center-black-div {
     background-color: black;
     padding: 2rem 0px;
@@ -268,10 +274,23 @@ nav {
     max-width: 33%;
 }
 
+.gavetas-row {
+    max-width: 45%;
+}
+
 #prevision-row {
     display: flex;
     flex-direction: row;
     /* margin-top: 3rem; */
+}
+#prevision-row-gavetas {
+    display: flex;
+    flex-direction: row;
+    /* margin-top: 3rem; */
+}
+
+.gavetas-row-div {
+    justify-content: space-around;
 }
 
 .gavetas {
@@ -280,22 +299,13 @@ nav {
 /* TO DO */
 
 
-
-
-
 footer {
     width: 100%;
     padding: 0;
+    display: block;
+    border: black 1px solid;
 }
 
-footer img {
-    width: 100%;
-    z-index: -1;
-    margin: 0 auto -60px;
-    height: 120vh;
-    max-width: 100%;
-    object-fit: cover;
-}
 
 footer h4 {
     margin: 0;
@@ -308,7 +318,8 @@ footer h4 {
 }
 
 .footer-links {
-    color: white;
+    /* color: white; */
+    color: black;
     text-decoration: underline;
 }
 
@@ -317,7 +328,10 @@ footer h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    /* position: relative; */
+    /* background-color: #048504; */
+    padding: 2rem;
+    padding-top: 0rem;
 }
 
 .footer-text-div {
@@ -325,15 +339,15 @@ footer h4 {
     width: 1000px;
     z-index: 1;
 
-    position: absolute;
-    bottom: 0px;
+    /* position: absolute; */
+    /* bottom: 0px; */
 
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.3fr 1fr;
     grid-column-gap: 15px;
     grid-row-gap: 0px;
-    color: rgb(255, 255, 255);
+    /* color: rgb(255, 255, 255); */
     }
     
     
@@ -342,8 +356,6 @@ footer h4 {
     
     }
     .check-sketchfab { grid-area: 2 / 1 / 3 / 2;
-        position: absolute;
-        bottom: 0px
     }
 
     .contact { grid-area: 2 / 2 / 3 / 3; 
@@ -352,7 +364,30 @@ footer h4 {
         text-align: right;}
     .tech-used { grid-area: 2 / 4 / 3 / 5;         text-align: right;}
 
+.last-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.9em;
+    text-align: left;
+    
+}
 
+.last-image h1 {
+    background: #F401F9;
+background: linear-gradient(to right, #F401F9 0%, #FF9A02 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.best-producers {
+    background: #00A3FF;
+background: linear-gradient(to right, #00A3FF 0%, #FA00FF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
 
 
 
@@ -436,6 +471,10 @@ footer h4 {
         flex-direction: column;
     }
 
+    .explain-text-section {
+        margin-top: 1rem;
+    }
+
     .number-in-box {
         margin-bottom: 1rem;
     }
@@ -456,7 +495,15 @@ footer h4 {
         margin: 0;
     }
 
-
+    .center-div-footer {
+        /* margin: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* position: relative; */
+        /* background-color: #048504; */
+        padding: 0.5rem;
+    }
 
     .footer-text-div {
         display: flex;
@@ -469,12 +516,37 @@ footer h4 {
         width: 100%;
     }
 
-    .center-div-footer {
-        margin: -100px 0px;
+    footer p {
+        /* font-weight: bold; */
     }
+
 
     footer img {
         margin: 0 auto -10px;
+        height: 80vh;
+        object-fit: cover;
+    }
+
+    .last-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4em;
+        text-align: center;
+        /* text-align: left; */
+        
+    }
+
+    .last-image img {
+        width: 70%;
+    }
+
+    .last-image h1 {
+        margin-top: 0.4rem;
+    }
+
+    footer {
+        border: none;
     }
 
 }
@@ -489,19 +561,30 @@ footer h4 {
         margin-left: 1rem;
     }
 
+    .last-image {
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        font-size: 1.2em;
+        /* text-align: center; */
+        text-align: left;
+    }
+
+    .last-image img {
+        width: 40%;
+    }
+
+
+
     #house-viewer-button {
         margin-left: 1rem;
     }
 
     /* Using */
 
-    .explain-text-section {
-        margin-top: 1rem;
-    }
-
     .explainations-grid {
         flex-direction: column;
-        margin: 1rem 1rem;
+        margin-left: 2rem;
     }
 
     .center-div-image{
